@@ -12,7 +12,7 @@ mongoose.set('strictQuery', false)
 
 async function connectToDB() {
   try {
-    await mongoose.connect(process.env.MONGO_URL)
+    await mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true})
   } catch (err) {
     console.log(err)
   }
