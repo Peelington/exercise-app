@@ -12,7 +12,7 @@ mongoose.set('strictQuery', false)
 
 async function connectToDB() {
   try {
-    await mongoose.connect('mongodb+srv://altonpeel123:yyG7ZKXm9LgMu73H@cluster0.ayubfzt.mongodb.net/')
+    await mongoose.connect(process.env.MONGO_URL)
   } catch (err) {
     console.log(err)
   }
