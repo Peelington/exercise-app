@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: sans-serif;
+  outline: none;
+  text-decoration: none;
+}
+
+.main {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+  min-height: 90vh;
+}
+
+/* body {
+  background-color: #66ff66;
+} */
+
+.navlink {
+  text-decoration: underline;
+  color: white;
+}
+
+.navlink:active {
+  animation: clickAnimation 0.1s linear;
+}
+
+@keyframes clickAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  /* position: fixed; */
+  width: 100dvw;
+  align-items: center;
+  height: 5vh;
+  background-color: black;
+}
+
+.auth-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1580261450046-d0a30080dc9b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGd5bXxlbnwwfHwwfHx8MA%3D%3D'), url('https://images.unsplash.com/photo-1587938745570-681161dcfe17?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGd5bXxlbnwwfHwwfHx8MA%3D%3D'), url('https://images.unsplash.com/photo-1637666062717-1c6bcfa4a4df?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTl8fGd5bXxlbnwwfHwwfHx8MA%3D%3D');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left, right, bottom;
+}
+
+.auth-container>h1 {
+  font-size: 2em;
+  margin: 24px;
+  color: antiquewhite;
+}
+
+.auth-container>p {
+  margin: 16px;
+  color: antiquewhite;
+  text-decoration: underline;
+  background-color: rgb(65, 12, 12);
+  border: 3px solid rgb(65, 12, 12);
+  border-radius: 5px;
+  
+}
+
+.auth-container>form {
+  border: 1px solid #3339;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgb(65, 12, 12);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-container>form>input {
+  margin: 16px 8px;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.auth-container>form>button {
+  margin: 16px 8px;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.exercise {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  background-color: darkgray;
+  margin: 15px;
+  padding: 10px;
+  width: 35dvw;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.exercise-name {
+  display: flex;
+  justify-content: center;
+}
+
+.exercise-muscle {
+  margin: 5px;
+  text-decoration: underline;
+}
+
+.exercise-difficulty {
+  margin: 5px;
+}
+
+.exercise-instructions {
+  margin: 5px;
+  padding: 10px;
+  width: 32dvw;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: #00aaff;
+  ;
+}
+
+.goal-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-self: center;
+  min-height: 100dvh;;
+  background-image: url('https://images.unsplash.com/photo-1514474959185-1472d4c4e0d4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fHRyYWNraW5nJTIwam91cm5hbHxlbnwwfHwwfHx8MA%3D%3D');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  position: relative;
+}
+
+.goal-form-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-display{
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  background-color: aliceblue;
+  margin-left: 30dvw;
+  margin-right: 30dvw;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.goal-form {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background-color:aliceblue ;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 60dvw;
+  margin: 20px;
+  padding: 10px;
+  position: top;
+}
+
+.goal-input {
+  margin: 15px;
+}
+
+.goal-posted {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  overflow: visible;
+  background-color: aliceblue;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-left: 270px;
+  margin-right: 270px;
+  margin-top: 5px;
+  padding: 10px;
+
+}
+
+.goal-listed {
+  margin: 5px;
+  padding: 5px;
+}
+
+.goalBtn{
+  width: 7%;
+  height: 7vh;
+}
+
+.workout-container {
+  display: flex;
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* width: 100px; */
+  min-height: 95vh;
+  background-color: lightgrey;
+  background-image: url('https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Ym9keWJ1aWxkaW5nfGVufDB8fDB8fHww'), url('https://images.unsplash.com/photo-1580261450046-d0a30080dc9b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTcxfHx3b3Jrb3V0fGVufDB8fDB8fHww');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left, right;
+  background-attachment: fixed;
+}
+
+.exercise-container {
+  background-color: transparent;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+}
+
+.personal-workouts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.home-text {
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+.workout-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  background-color: darkgrey;
+}
+
+.exercise-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: top;
+  flex-wrap: wrap;
+}
+
+.workout-text {
+  display: flex;
+  font-size: 50px;
+  text-decoration: underline;
+  /* justify-content: flex-start; */
+}
+
+.home-container{
+  background-color: black;
+  background-image: url('https://images.unsplash.com/photo-1512078083908-46520ff2a87d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3VuJTIwcmlzZXxlbnwwfHwwfHx8MA%3D%3D');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+}
