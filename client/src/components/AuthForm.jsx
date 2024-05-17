@@ -23,7 +23,7 @@ export default function AuthForm(props) {
         onChange={handleChange}
         placeholder="Username" />
       <input
-        type='text'
+        type='password'
         name="password"
         value={password}
         onChange={handleChange}
